@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Sidebar, ThemeSettings } from "../components/index/index"
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line} from "../pages/index/index"
+import { Ecommerce, Orders, Employees, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Calendar, Line } from "../pages/index/index"
 
 function App() {
 const activeMenu = true;
@@ -42,17 +42,19 @@ const activeMenu = true;
             <Route path="/ecommerce" element={<Ecommerce />} />
              {/* Pages */}
             <Route path="/orders" element={<Orders />}/>
-            <Route path="/employes" element={<Employees />}/>
+            <Route path="/employees" element={<Employees />} />
             <Route  path="/customers" element={<Customers />}/>
              {/* apps */}
              <Route path="/kanban" element={<Kanban />} />
              <Route path="/editor" element={<Editor />} />
-             <Route path="/calender" element={<Calendar />} />
+             <Route path="/calendar" element={<Calendar />} />
              <Route path="/color-picker" element={<ColorPicker />} />
              {/* Charts */}
              <Route path="/line" element={<Line />} />
-             <Route path="/area" element={<Area />} />
-             <Route path="/pie" element={<Pie />} />
+              <Route path="/area" element={<Area />} />
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/financial" element={<Financial />} />
              <Route path="/color-mapping" element={<ColorMapping />} />
              <Route path="/pyramid" element={<Pyramid />} />
              <Route path="/stacked" element={<Stacked />} />
