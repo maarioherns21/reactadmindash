@@ -6,7 +6,7 @@ import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import avatar from '../../data/avatar.jpg';
+import avatar from '../../data/profilepic.jpeg';
 import { Cart, Chat, Notification, UserProfile } from '../index/index';
 import { useStateContext } from "../../context/ContextProvider";
 
@@ -71,7 +71,7 @@ const NavBar = () => {
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{' '}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Michael
+                Mario
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
