@@ -2,8 +2,8 @@ import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-re
 
 const Sparkline = ({ id, height, width, color, data, type, currentColor}) =>{
 
-    return (
-      <SparklineComponent
+  return (
+    <SparklineComponent
       id={id}
       height={height}
       width={width}
@@ -24,10 +24,10 @@ const Sparkline = ({ id, height, width, color, data, type, currentColor}) =>{
       xName="x"
       yName="yval"
       type={type}
-      >
-        <Inject services={[SparklineTooltip]} />
-      </SparklineComponent>
-    );
+    >
+      <Inject services={[SparklineTooltip]} />
+    </SparklineComponent>
+  );
 }
 
 export default Sparkline
