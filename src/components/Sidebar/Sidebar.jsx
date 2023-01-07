@@ -35,8 +35,8 @@ return (
             <button
               type="button"
               onClick={() => setActiveMenu(!activeMenu)}
-              style={{ color: currentColor }}
-              className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
+              style={{ color: 'rgb(153, 171, 180)', borderRadius: '50%' }}
+              className="text-2xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden  hover:drop-shadow-xl "
             >
               <MdOutlineCancel />
             </button>
