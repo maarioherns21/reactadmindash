@@ -7,6 +7,8 @@ import { useStateContext } from '../../../context/ContextProvider';
 
 const Stacked = ({ width, height }) => {
   const { currentMode } = useStateContext();
+  
+  
   return (
     <ChartComponent
       id="charts"
@@ -18,8 +20,7 @@ const Stacked = ({ width, height }) => {
       tooltip={{ enable: true }}
       background={currentMode === "Dark" ? "#33373E" : "#fff"}
       legendSettings={{ background: "white" }}
-    >
-        
+    >   
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
